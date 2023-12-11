@@ -29,7 +29,7 @@ const LeaderBoard = () => {
 
   return (
     <>
-      <div className="custom-bg-color bounded flex flex-col items-center justify-center h-[100vh]">
+      <div className="custom-bg-color bounded flex flex-col items-center justify-center py-24">
         <h1 className="text-white m-7" action="/">Leader Board</h1>
         <div className="submission-form rounded-lg lg:flex items-center justify-center p-8 w-[50wh]">
           <div role="tablist" className="tabs-lg tabs-lifted  ">
@@ -45,8 +45,8 @@ const LeaderBoard = () => {
             <a
               role="tab"
               className={`tab ${activeTab === "/android"
-                  ? "tab-active text-black"
-                  : "text-white"
+                ? "tab-active text-black"
+                : "text-white"
                 }`}
               onClick={() => setActiveTab("/android")}
             >
@@ -72,7 +72,7 @@ const LeaderBoard = () => {
                   <thead>
                     <tr>
                       <th>Username</th>
-                      <th>Enrollment No.</th>
+                      <th>Points</th>
                     </tr>
                   </thead>
                   <tbody>
